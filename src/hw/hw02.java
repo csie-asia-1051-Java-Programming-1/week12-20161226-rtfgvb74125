@@ -11,6 +11,30 @@ public class hw02 {
 		// TODO Auto-generated method stub
 
 		Scanner scn = new Scanner(System.in);
+		String str = scn.next();
+		for(int i = 0;i<str.length();i++){
+			char n = str.charAt(i);
+			int x = (int)n;
+			if(x>='A' && x<='Z'){
+				int m = x-'a';
+			}
+			
+		}
+		
 	}
 
 }
+//switch(x){
+//case 96:
+//	System.out.println("s");
+//	break;
+//case 97:
+//	System.out.println("n");
+//	break;
+//case 98:
+//	System.out.println("v");
+//	break;
+//case 99:
+//	System.out.println("f");
+//	break;
+//}
