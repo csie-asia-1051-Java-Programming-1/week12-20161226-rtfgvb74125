@@ -12,10 +12,10 @@ public class ex02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		int x = scn.nextInt();
+		//int x = scn.nextInt();
 		int sum = 0;
 		//String n = scn.nextLin();
-		for (int j = 0; j < x; j++) {
+		for (int j = 0; j < 10; j++) {
 			String n = " ";
 			 do {
 			 n = scn.nextLine();
@@ -24,12 +24,13 @@ public class ex02 {
 				for (int i = 0; i < n.length(); i++) {
 					char v1 = n.charAt(i);
 					int v2 = (int) v1;
+					System.out.print(v2+"\t");
 					sum = sum + v2;
 				}
-				System.out.print(sum);
+				System.out.println("總和 = "+sum);
 				sum = 0;
 			}
-			System.out.println();
+			
 	}
 
 }
