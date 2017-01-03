@@ -19,7 +19,7 @@ public class ex02 {
 			String n = " ";
 			 do {
 			 n = scn.nextLine();
-			 } while (n.equals(""));
+			 } while (n.equals(" "));
 		//n = scn.nextLine();//功能等同do while
 				for (int i = 0; i < n.length(); i++) {
 					char v1 = n.charAt(i);
