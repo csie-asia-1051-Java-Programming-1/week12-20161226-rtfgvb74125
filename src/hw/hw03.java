@@ -11,7 +11,21 @@ public class hw03 {
 		// TODO Auto-generated method stub
 
 		Scanner scn = new Scanner(System.in);
-		
+		String str = scn.nextLine();
+		String data[] = str.split(" ");
+		for(int i = 0;i<str.length();i++){
+			char ch1 = str.charAt(i);
+			int v1 = (int)ch1;
+			if(v1>='A' && v1<='Z'){
+				v1 = v1-'A';
+				v1 = v1+'a';
+				System.out.print((char)v1);
+			}else{
+				System.out.print((char)v1);
+			}
+			
+			
+		}
 	}
 
 }
