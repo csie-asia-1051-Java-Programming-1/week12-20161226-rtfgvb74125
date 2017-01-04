@@ -12,15 +12,12 @@ public class ex02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		//int x = scn.nextInt();
+		int x = scn.nextInt();
 		int sum = 0;
-		//String n = scn.nextLin();
-		for (int j = 0; j < 10; j++) {
-			String n = " ";
-			 do {
+		String n = scn.nextLine();
+		for (int j = 0; j < x; j++) {
+					
 			 n = scn.nextLine();
-			 } while (n.equals(" "));
-		//n = scn.nextLine();//功能等同do while
 				for (int i = 0; i < n.length(); i++) {
 					char v1 = n.charAt(i);
 					int v2 = (int) v1;
