@@ -13,18 +13,23 @@ public class hw03 {
 		Scanner scn = new Scanner(System.in);
 		String str = scn.nextLine();
 		String data[] = str.split(" ");
-		for(int i = 0;i<str.length();i++){
-			char ch1 = str.charAt(i);
-			int v1 = (int)ch1;
-			if(v1>='A' && v1<='Z'){
-				v1 = v1-'A';
-				v1 = v1+'a';
-				System.out.print((char)v1);
-			}else{
-				System.out.print((char)v1);
+		for(int i = 0;i<data.length;i++){
+			for(int j = i+1;j<data.length;j++){
+				if(data[i].equals(data[j])){
+					data[j] = " ";
+				}
 			}
-			
-			
+			for(int k = 0;k<data[i].length();k++){
+				char a = data[i].charAt(k);
+				if(a>='A' && a<='Z'){
+					int v1 = (int)a-'A';
+					v1 = v1+'a';
+					System.out.print((char)v1);
+				}else{
+					System.out.print(a);
+				}
+			}
+			System.out.print(" ");
 		}
 	}
 
